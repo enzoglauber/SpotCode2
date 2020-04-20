@@ -21,3 +21,4 @@ rails g migration add_name_to_users name:string
 rails g controller api/v1/dashboard
 rails g controller api/v1/categories
 rails g controller api/v1/albums
+rails g controller api/v1/recently_heards
