@@ -1,0 +1,8 @@
+gem install rails -v '6.0.2.1'
+rails _6.0.2.1_ new spotcode
+
+gem 'devise'
+bundle install
+rails g devise:install
+rails generate devise User
+rails db:migrate
