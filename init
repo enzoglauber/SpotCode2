@@ -6,3 +6,14 @@ bundle install
 rails g devise:install
 rails generate devise User
 rails db:migrate
+
+rails active_storage:install
+rails g model artist name
+rails g model category name
+rails g model album title date:datetime category:references artist:references
+rails g model song title played_count:integer album:references
+rails g model recently_heard user:references album:references
+rails g model favorite user:references favoritable:references{polymorphic}
+
+#altera o devise
+rails g migration add_name_to_users name:string
