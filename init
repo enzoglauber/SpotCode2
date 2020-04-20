@@ -19,3 +19,4 @@ rails g model favorite user:references favoritable:references{polymorphic}
 rails g migration add_name_to_users name:string
 
 rails g controller api/v1/dashboard
+rails g controller api/v1/categories
