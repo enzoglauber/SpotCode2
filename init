@@ -1,3 +1,12 @@
+Links e senhas:
+https://onebitcode.com/ssfs-spotcodev2-aula1
+backend_Aula1_Spotcode
+https://onebitcode.com/ssfs-spotcodev2-aula2/
+frontend_Aula2_Spotcode
+https://onebitcode.com/ssfs-spotcodev2-aula3
+app_PWA_Aula3_Spotcode
+
+// BACK
 gem install rails -v '6.0.2.1'
 rails _6.0.2.1_ new spotcode
 
@@ -23,3 +32,6 @@ rails g controller api/v1/categories
 rails g controller api/v1/albums
 rails g controller api/v1/recently_heards
 rails g controller api/v1/favorites
+
+//FRONT
+rails webpacker:install:react
