@@ -36,3 +36,4 @@ rails g controller api/v1/favorites
 //FRONT
 rails webpacker:install:react
 yarn add react-bulma-components
+yarn add react-router-dom

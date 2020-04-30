@@ -25,4 +25,7 @@ Rails.application.routes.draw do
       end  
     end
   end
+
+  # fix conflito de rotas do react com o rails
+  get "*path", to: "home#index", :constraints => lambda{|req| req.path !~ /\.(png|jpg|js|css|json)$/ }
 end
