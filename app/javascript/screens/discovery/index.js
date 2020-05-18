@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
+import Discovery from '../../components/album';
 import NavbarFooter from '../../components/common/navbar_footer';
 import SectionWrapper from '../../components/common/section_wrapper';
-import Discovery from '../../components/album';
 
 const DiscoveryScreen = () => {
   return (
