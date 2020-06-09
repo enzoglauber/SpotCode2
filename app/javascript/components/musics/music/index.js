@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 import { Columns, Heading } from 'react-bulma-components';
-import { FaPlayCircle } from 'react-icons/fa';
+import { FaPlayCircle, FaStopCircle } from 'react-icons/fa';
 import styled from 'styled-components';
-
 
 const MusicSeparator = styled.hr`
   height: 1px;
