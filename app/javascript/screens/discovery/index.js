@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import Discovery from '../../components/album';
+import Discovery from '../../components/discovery';
 import NavbarFooter from '../../components/common/navbar_footer';
 import SectionWrapper from '../../components/common/section_wrapper';
 
