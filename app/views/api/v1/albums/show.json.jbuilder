@@ -9,4 +9,5 @@ json.songs @album.songs.each do |song|
   json.artist_name @album.artist.name
   json.artist @album.artist
   json.album_id song.album.id
+  json.favorite current_user.is_favorite? 'Song', song.id
 end
