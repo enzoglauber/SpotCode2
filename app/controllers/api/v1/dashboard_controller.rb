@@ -9,7 +9,7 @@ class Api::V1::DashboardController < ApplicationController
 
 
   def load_recent_heard
-    @recent_albums = current_user.recently_heards.order("created_at DESC").limit(4).map(&:album)
+    @recent_albums = current_user.recently_heards.order("created_at DESC").limit(8).map(&:album).uniq
   end
 
 
@@ -19,7 +19,7 @@ class Api::V1::DashboardController < ApplicationController
       @recommended_albums = Album.joins(:category, :songs)
                                 .where(category: heard_categories)
                                 .order("songs.played_count")
-                                .select("distinct albums.*").limit(12)
+                                .select("distinct albums.*").limit(12)    
     else
       @recommended_albums = Album.all.limit(12)
     end

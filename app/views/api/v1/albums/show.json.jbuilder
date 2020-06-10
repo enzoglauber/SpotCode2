@@ -8,4 +8,5 @@ json.songs @album.songs.each do |song|
   json.file_url url_for(song.file)
   json.artist_name @album.artist.name
   json.artist @album.artist
+  json.album_id song.album.id
 end
