@@ -5,4 +5,4 @@ const AlbumsService = {
   show: (id) => Api.get(`/albums/${id}`)
 }
 
-export default AlbumsService;
+export default AlbumsService
