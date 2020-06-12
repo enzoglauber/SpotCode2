@@ -5,7 +5,7 @@ import CategoriesService from '../../services/categories';
 import SearchService from '../../services/search';
 import Categories from '../common/categories';
 import SearchBar from './search_bar';
-
+import ResultsTabs from '../common/results_tabs'
 
 const Search = () => {
   const [albums, setAlbums] = useState([])
@@ -33,7 +33,7 @@ const Search = () => {
           <SearchBar fetchSearch={fetchSearch}/>
         </Columns.Column>
       </Columns>
-
+      <ResultsTabs albums={albums || []} artists={artists || []} songs={songs || []} />
       <Categories fetchCategorySearch={fetchCategorySearch} />
     </Fragment>
   )
