@@ -40,3 +40,14 @@ yarn add react-router-dom
 yarn add styled-components
 yarn add react-icons
 yarn add axios
+
+//WPA
+gem 'rack-cors'
+gem 'serviceworker-rails'
+bundle install
+
+rails g serviceworker:install
+
+12 – Baixe o ngrok: https://ngrok.com
+13 – Adicione em config/application.rb:
+config.hosts.clear
